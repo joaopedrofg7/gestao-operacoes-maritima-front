@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Ocorrencias</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="tabelanotificações.css" rel="stylesheet">
+    <link rel="stylesheet" href="btnlogout.css">
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+    <!-- link tabelas-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="fetchData.js"></script>
+    <script src="new.js"></script>
+    <script src="edit.js"></script>
+    <script src="delete.js"></script>
+    <script src="deleteSelected.js"></script>
+    <script src="addNewOne.js"></script>
+
+    <!-- mais links tabelas-->
+
+    <link rel="stylesheet" href="materiais.css" />
+   
+
+</head>
+
+<body onload="fetchDataToFillTable()" class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="graficos.html">
+                            <img src="images/icon/logo.png" alt="Policia Maritima" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="graficos.html">
+                    <img src="images/icon/logo.png" alt="Policia Maritima" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+             
+                </nav>
+                <form>
+                    <div class="form-group">
+                        <label>Nivel</label>
+                        <input type="number" id="Nivel" class="form-control"  placeholder="Sem Dados" disabled="disabled"/>
+
+                        <label>Membros nesesários</label>
+                        <input type="text" id="needed" class="form-control"  placeholder="Sem Dados" disabled="disabled"/>
+                        <label>Membros Atuais</label>
+                        <input type="number" id="atual" class="form-control"  placeholder="Sem Dados" disabled="disabled"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <textarea type="text" id="descricao_pedido" class="form-control" disabled="disabled" placeholder="Sem Dados"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>ID equipa</label>
+                        <table id="EquipaSelecionada" class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <!--falta mudar valores de quando se passa por cima do icon-->
+                          </tbody>
+                      </table>
+                    </div>
+                    <div class="form-group">
+                        <label>Voluntarios Escolhidos</label>
+                      
+                    <!--   <table id="MaterialSelecionado"></table> -->
+                       <table id="VoluntarioSelecionado" class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--falta mudar valores de quando se passa por cima do icon-->
+                      </tbody>
+                  </table>
+                       
+                       <!-- <input type="text" class="form-control" value="Barcos - 3" disabled="disabled">  -->
+                      <!--  <input type="text" class="form-control" value="Coletes - 20" disabled="disabled"disabled="disabled"> -->
+                    </div>
+                    <div class="form-group">
+                        <label>Material Escolhidos</label>
+                        <table id="MaterialSelecionado" class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <!--falta mudar valores de quando se passa por cima do icon-->
+                          </tbody>
+                      </table>
+                    </div>
+                   
+                    <button class="butãosubmitocorrencia" id="submit" onclick="submitOcurrencia()"style="margin-top: 1rem;
+                                                 padding: 1rem 1.5rem;
+                                                 background-color:gray;
+                                                 border: none;
+                                                 border-radius: 0.5px;
+                                                 color:white;
+                                                 text-transform: uppercase;
+                                                 cursor: pointer;
+                                                 text-decoration: none;
+                                                 " 
+                                                 type="button">Validar</button>
+                </form>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                               
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-notifications"></i>
+                                        <span id="numeroNot" class="quantity">0</span>
+                                        <div class="notifi-dropdown js-dropdown">
+                                            <div id=numero_pedidos class="notifi__title">
+                                                <p>You have 0 Notifications</p>
+                                            </div>
+                                            <table id="tabelaNotifications" class="table table-striped table-hover" ></table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#" id="NomeUser1" ></a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#"id="NomeUser2"></a>
+                                                    </h5>
+                                                    <span class="email" id="EmailUser"></span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="acount.html">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <button type="button" id="Logout" class="zmdi zmdi-power">Logout</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+             <div class="main-content">
+
+                      <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- DATA TABLE -->
+                                
+                                    <div class="container">
+                                        <div class="table-wrapper">
+                                            <div class="table-title">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h2>Equipas Disponiveis</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <table id="tabelaEquipas" class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Pontos</th>
+                                                        <th>Membros</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                
+
+<div  class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Voluntários disponíveis</h2>
+                </div>
+            </div>
+        </div>
+            <table id="tabelaVoluntarios" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>problemas de saude</th>
+                        <th>experiencia</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                                                   
+                </tbody>
+            </table>
+    </div>
+</div>
+
+        
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Materiais desponiveis</h2>
+                </div>
+            </div>
+        </div>
+        <table id="tabelaMateriais" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>descrição</th>
+                    <th>total</th>
+                    <th>desponível</th>
+                   
+                    
+                   
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- Add Modal HTML -->
+ <div id="addEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <form>
+       <div class="modal-header">      
+        <h4 class="modal-title">Adicionar Material</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       </div>
+       <div class="modal-body">     
+        <div class="form-group">
+         <label>Materiais desponiveis:</label>
+         <br>
+         <div class="dropdown-list">
+            <div class="dropdown-list__item"><button style="margin-top: 1rem;
+                padding: 1rem 1.5rem;
+                background-color: rgb(102, 167, 211);
+                border: none;
+                border-radius: 15px;
+                color:white;
+                text-transform: uppercase;
+                cursor: pointer;
+                text-decoration: none;
+                " type="submit"">Pepsi</button></div>
+            <br>
+         </div>
+        </div>   
+       </div>
+      </form>
+     </div>
+    </div>
+   </div> 
+
+
+                                
+                                
+
+                                <!-- END DATA TABLE -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    
+     <!-- Controller-->
+   <script src="../Controllers/materialController.js"></script> 
+   <script src="../Controllers/notificationController.js"></script>
+   <script>
+
+</script>
+
+<!-- Controller-->
+
+<script src="../Controllers/notificationController.js"></script>
+<script src="../Controllers/ocorrenciaController.js"></script>
+<script src="../Controllers/LoginController.js"></script>
+
+
+<script>
+window.onload = function () {
+ getNotifications();
+ readEquipas();
+ readVoluntario();
+ readMaterial();
+ id = localStorage.getItem("id_ocorencia") 
+ readID(id);
+ Logout();
+}
+
+</script>
+
+</body>
+
+</html>
+<!-- end document-->

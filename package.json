@@ -1,0 +1,22 @@
+{
+  "name": "gestao-operacoes-maritima-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopedrofg7/gestao-operacoes-maritima-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaopedrofg7/gestao-operacoes-maritima-front/issues"
+  },
+  "homepage": "https://github.com/joaopedrofg7/gestao-operacoes-maritima-front#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

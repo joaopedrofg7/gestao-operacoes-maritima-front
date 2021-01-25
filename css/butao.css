@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.btnx{
+    margin-top: 1rem;
+    padding: 0.6rem 1.6rem;
+    background-color: #d7e6f1;
+    border: none;
+    border-radius: 25px;
+    color: rgb(45, 175, 187);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnx:hover{
+    background-color: rgb(45, 175, 187);
+    color: #f6f6f6;
+}

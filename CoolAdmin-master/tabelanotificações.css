@@ -1,0 +1,10 @@
+#tabelaNotifications tbody{
+    display: block;
+    overflow-y: auto;
+    height: 200px;
+
+}
+
+#tabelaNotifications tr{
+    display: block;
+}

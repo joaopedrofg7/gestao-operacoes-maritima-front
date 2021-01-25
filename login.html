@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="./css/login.css"> 
+    <title> Polícia Maritima - Gestor de Operações </title>
+    <meta name="descrição" content="Parte dedicada para os Utilizadores e Gestor de Operações"/>    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devive-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="icon" href="./images/logo - Cópia (2).png">
+</head>
+<body> 
+    <div class="fundo">
+    <div class="center">
+        <a href="index.html" target="_self">
+        <img src="./images/logo.png" alt="some text" width="400" height=160>
+        </a>
+      <form method="post">
+          <div class="txt_field">
+              <input id="Email" type="email" required>
+              <span></span>
+              <label> E-mail</label>
+          </div>
+          <div class="txt_field">
+              <input id="password" type="password" required>
+              <span></span>
+              <label>Password</label>
+          </div>
+          <div>
+            <a></a>
+                <button id="Login" type="button" class="btnlogin">Login</button>
+                <a href="recuperar.html">
+                <button id="recuperar" type="button" class="btnrecuperar">Escqueceu-se da password?</button>
+            </a>
+            </a>
+        </div>
+      </form>
+    </div>
+</div>
+</body>
+<script src="./Controllers/LoginController.js"></script>
+<script>
+    window.onload = function (){
+    Login()}
+   
+</script> 
+
+</html>
