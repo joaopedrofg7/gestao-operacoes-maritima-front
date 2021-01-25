@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="./css/login.css"> 
+    <title> Polícia Maritima - recuperar palavra pass </title>
+    <meta name="descrição" content="Parte dedicada para os Utilizadores e Gestor de Operações"/>    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devive-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="icon" href="./images/logo - Cópia (2).png">
+</head>
+<body> 
+    <div class="fundo">
+    <div class="center">
+        <a href="index.html" target="_self">
+        <img src="./images/logo.png" alt="some text" width="400" height=160>
+        </a>
+      <form method="post">
+          <div class="txt_field">
+            <input id="Email" type="text" required>
+            <span></span>
+            <label>E-mail</label>
+        </div>
+        <span>  </span>
+          <div>
+            <a></a>
+                <button id="Recover" type="button" class="btnlogin">Submeter</button>
+            </a>
+        </div>
+      </form>
+    </div>
+</div>
+</body>
+<script src="./Controllers/acountController.js"></script>
+<script>
+  window.onload = function () {
+    Recover();
+  }
+</script>
+
+</html>

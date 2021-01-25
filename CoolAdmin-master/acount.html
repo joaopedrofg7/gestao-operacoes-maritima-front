@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acount setings</title>
+    <link rel="stylesheet" href="acount.css">
+</head>
+<body>
+    <div class="fundo">
+        <!--<video autoplay > <source src="./media/Pexels Videos 2711239.mp4" type="video/mp4"></video> -->
+        <div class="center">
+            <a href="graficos.html" target="_self">
+            <img src="./media/logo.png" alt="some text" width="400" height=160>
+            </a>
+          <form name="field" method="post">
+              <div class="txt_field">
+                  <input  id="Nome" type="text" required>
+                  <span></span>
+                  <label>Nome</label>
+              </div>
+              <div class="txt_field">
+                <input id ="Email" type="text" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+              <div class="txt_field">
+                  <input  name="novapass" id = "password" type="password" required>
+                  <span></span>
+                  <label>Nova Password</label>
+              </div>
+              <div class="txt_field">
+                <input name="novapassconf" id="passwordConf" type="password" required>
+                <span></span>
+                <label>Confirmar Nova Password</label>
+            </div>
+            
+              <div>
+             <a href="../CoolAdmin-master/graficos.html" target="_self">   
+                
+                    <button type="button" id="save" class="btnlogin">Guardar Alterações</button>
+                </a>
+            </div>
+          </form>
+        </div>
+    </div>
+    
+</body>
+<script src="../Controllers/acountController.js"></script>
+
+<script>
+    window.onload = function () {
+    read();
+    SaveChanges();
+   }
+</script>
+</html>
