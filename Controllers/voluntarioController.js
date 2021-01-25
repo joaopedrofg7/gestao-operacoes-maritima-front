@@ -109,6 +109,7 @@ let a;
                 headers: { 'Content-Type': 'application/json' },
                 method: 'PUT',
                 body: JSON.stringify(data),
+                credentials: "include"
             }).then(res => {
                 return res.json();
             }).then(data => {
