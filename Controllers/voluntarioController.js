@@ -1,4 +1,4 @@
-
+let domain = "http://188.166.174.213:8080/";
 let a;
 
    
@@ -159,7 +159,6 @@ let a;
     }
     
 
-    let domain = "http://188.166.174.213:8080/";
     function editVoluntario() {
         let data = {};
         data.nome_voluntario = document.getElementById('nomeInput').value;
