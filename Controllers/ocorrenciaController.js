@@ -635,9 +635,9 @@ function registerMaterialOcurrencia() {
 
 
 function submitOcurrencia(){
-   registerMaterialOcurrencia()
-   AceptOcorrencia()
-   updateOcorrenciaTeam()
-   registerVoluntarioOcurrencia()
+   registerMaterialOcurrencia();
+   AceptOcorrencia();
+   updateOcorrenciaTeam();
+   registerVoluntarioOcurrencia();
    location.href = "./calendar.html";
 }
