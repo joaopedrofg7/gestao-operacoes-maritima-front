@@ -102,8 +102,8 @@ function registerMaterial() {
         fetch(domain+"materials", {
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
-            credentials: "include",
             body: JSON.stringify(data),
+            credentials: "include"
         }).then(res => {
             return res.json();
         }).then(data => {
@@ -124,8 +124,8 @@ function updateQuantity() {
         fetch(domain+"materials/"+id_material+"/increase", {
             headers: { 'Content-Type': 'application/json' },
             method: 'PUT',
-            credentials: "include",
             body: JSON.stringify(data),
+            credentials: "include"
         }).then(res => {
             return res.json();
         }).then(data => {

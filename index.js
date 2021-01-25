@@ -19,4 +19,4 @@ app.use(function (req, res, next){
   res.status(404).send("Parabéns! Entraste no vácuo da aplicação");
 })
 
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 5050);
