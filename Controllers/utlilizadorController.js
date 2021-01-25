@@ -89,8 +89,8 @@ let a;
             fetch("http://188.166.174.213:8080/signup", {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
-                credentials: "include",
                 body: JSON.stringify(data),
+                credentials: "include"
             }).then(res => {
                 return res.json();
             }).then(data => {
