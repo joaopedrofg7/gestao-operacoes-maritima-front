@@ -173,11 +173,10 @@ function readOcorenciasHold() {
                          // 3. Add event handler
                          button.addEventListener ("click", function() {
                             var row = $(this).closest('tr');
-                            row1 = row.find('td:eq(0)').text();
                             row2 = row.find('td:eq(1)').text();
                             
     
-                            row3 = row.find('p:eq(0)').text();
+                            row3 = row.find('td:eq(0)').text();
                             
                        //     var number = parseInt(row3, 1);
                             localStorage.setItem('id_ocorencia', row3);
