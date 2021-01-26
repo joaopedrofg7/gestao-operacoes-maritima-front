@@ -86,7 +86,7 @@ let a;
         
     
         try{
-            fetch("http://188.166.174.213:8080/signup", {
+            fetch('http://188.166.174.213:8080/signup', {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'POST',
                 body: JSON.stringify(data),

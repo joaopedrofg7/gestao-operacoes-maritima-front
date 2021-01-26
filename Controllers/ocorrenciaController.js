@@ -540,7 +540,7 @@ function registerVoluntarioOcurrencia() {
     console.log(id_voluntario);
 
     try{
-        fetch('http://188.166.174.213:8080/'+id+'/volunteers/'+id_voluntario, {
+        fetch('http://188.166.174.213:8080/occurrences/'+id+'/volunteers/'+id_voluntario, {
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             body: JSON.stringify(data),
@@ -565,7 +565,7 @@ function updateOcorrenciaTeam() {
   
 
   try{
-        fetch("http://188.166.174.213:8080/"+ id +"/teams/" + id_equipa, {
+        fetch("http://188.166.174.213:8080/occurrences/"+ id +"/teams/" + id_equipa, {
             headers: { 'Content-Type': 'application/json' },
             method: 'PUT',
             body: JSON.stringify(data),
@@ -586,7 +586,7 @@ function AceptOcorrencia() {
       
 
     try{
-        fetch("http://188.166.174.213:8080/" + id + "/accept", {
+        fetch("http://188.166.174.213:8080/occurrences/" + id + "/accept", {
             headers: { 'Content-Type': 'application/json' },
             method: 'PUT',
             body: JSON.stringify(data),
@@ -617,7 +617,7 @@ function registerMaterialOcurrencia() {
     data.quantidade_usada = quantidade_usada;
 
   try{
-        fetch('http://188.166.174.213:8080/'+id+'/materials/'+id_material, {
+        fetch('http://188.166.174.213:8080/occurrences/'+id+'/materials/'+id_material, {
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             body: JSON.stringify(data),
