@@ -147,7 +147,8 @@ let a;
             fetch(domain+"volunteers/"+id_voluntario+"/reject", {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'PUT',
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                credentials: "include"
             }).then(res => {
                 return res.json();
             }).then(data => {
