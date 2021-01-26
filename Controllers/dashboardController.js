@@ -150,7 +150,7 @@
 
 
                     } else if(data[0].disponibilidade == 'disponível' && data[1].disponibilidade == 'indisponível'){
-                        operacionais_ativos = data[0].quantidade_operacional;
+                        operacionais_ativos = data[1].quantidade_operacional;
                         operacionais_total = data[0].quantidade_operacional + data[1].quantidade_operacional;
 
                     document.getElementById('operacionaisNumero').innerHTML = operacionais_ativos+" / "+operacionais_total;
