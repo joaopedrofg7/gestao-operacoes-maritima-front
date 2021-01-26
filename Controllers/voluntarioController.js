@@ -70,8 +70,7 @@ let a;
 
                             var button = document.createElement("button");
                             button.innerHTML = 
-                           ' <a onclick="getID()" href="#editEmployeeModal2" id="edit" class="edit" style="color: rgb(22, 224, 22);" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE177;</i></a> ' + 
-                           ' <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> '
+                           ' <a onclick="getID()" href="#editEmployeeModal2" id="edit" class="edit" style="color: rgb(22, 224, 22);" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE177;</i></a> '
     
                             c.appendChild(button);
                             button.addEventListener ("click", function() {
