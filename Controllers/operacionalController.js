@@ -91,7 +91,7 @@ var username;
 
             let data = {}
 
-            fetch('http://188.166.174.213:8080/'+ id_operacional +'/teams/'+ id_equipa, {
+            fetch('http://188.166.174.213:8080/operationals/'+ id_operacional +'/teams/'+ id_equipa, {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'PUT',
                 body: JSON.stringify(data),
