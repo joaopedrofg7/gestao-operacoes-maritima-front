@@ -639,5 +639,5 @@ function submitOcurrencia(){
    AceptOcorrencia();
    updateOcorrenciaTeam();
    registerVoluntarioOcurrencia();
-   //location.href = "./calendar.html";
+   location.href = "./calendar.html";
 }
