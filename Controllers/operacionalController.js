@@ -54,8 +54,8 @@ let a;
                             var row = $(this).closest('tr');
                             row1 = row.find('td:eq(0)').text();
                             row2 = row.find('td:eq(1)').text();
-                            row3 = row.find('td:eq(3)').text();
-                            row4 = row.find('td:eq(5)').text();
+                            row3 = row.find('td:eq(2)').text();
+                            row4 = row.find('td:eq(4)').text();
                              //alert("O id é: " + row1 );
 
                              id_operacional = row1;
