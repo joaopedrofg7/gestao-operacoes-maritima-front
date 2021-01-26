@@ -122,9 +122,6 @@ function removerVoluntario(valor){
         }
         document.getElementById("submit").style.backgroundColor = "red";
         document.getElementById("submit").setAttribute("disabled","disabled");
-        for(i=1; i<quant_voluntarios; i++){
-            document.getElementById("tabelaVoluntarios").rows[i].cells[8].firstChild.disabled=true;
-        }
     } 
 };
 
