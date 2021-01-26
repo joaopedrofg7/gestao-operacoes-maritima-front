@@ -100,12 +100,6 @@ var username;
                 return res.json();
             }).then(data => {
                 console.log(data);
-                success = data.success;
-            if(success == false){
-                alert("Equipa indisponivel");
-                
-               }
-               else{
 
                 try{
                     let data = {};
@@ -127,7 +121,6 @@ var username;
                     console.log({msg: err});
                 }
 
-               }
             })
         } catch(err){
             console.log({msg: err});
