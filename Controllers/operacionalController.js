@@ -28,18 +28,15 @@ let a;
                             c.innerHTML = data[i].username;
                         }
                         if(a == 2){
-                            c.innerHTML = data[i].disponibilidade;
-                        }
-                        if(a == 3){
                             c.innerHTML = data[i].horario;
                         }
-                        if(a == 4){
+                        if(a == 3){
                             c.innerHTML = data[i].pontos_gamificacao;
                         }
-                        if(a == 5){
+                        if(a == 4){
                             c.innerHTML = data[i].id_equipa;
                         }
-                        if(a == 6){
+                        if(a == 5){
                             cargo = localStorage.getItem("id_cargo");
                             if(cargo == 2){
                                 var button = document.createElement("button");
