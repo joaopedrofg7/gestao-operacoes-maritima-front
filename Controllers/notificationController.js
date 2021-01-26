@@ -5,7 +5,7 @@
 
 
 function getNotifications() {
-    fetch('http://188.166.174.213:8080/', {
+    fetch('http://188.166.174.213:8080/occurrencesOnHold', {
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
         method: 'GET',

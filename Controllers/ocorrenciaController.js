@@ -429,7 +429,7 @@ function readEquipas() {
                     }
                     if(a == 2){
                         function getMembros(id_equipa) {
-                            fetch('http://188.166.174.213:8080/'+id_equipa, {
+                            fetch('http://188.166.174.213:8080/operationalsEquipa/'+id_equipa, {
                                 headers: { 'Content-Type': 'application/json' },
                                 mode: 'cors',
                                 method: 'GET',
