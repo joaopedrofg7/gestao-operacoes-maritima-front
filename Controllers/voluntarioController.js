@@ -143,7 +143,7 @@ let a;
             }).then(data => {
                 console.log(data);
             });
-        } else if((document.getElementById("repRadio").checked)){
+        } else if(document.getElementById("repRadio").checked){
             fetch(domain+"volunteers/"+id_voluntario+"/reject", {
                 headers: { 'Content-Type': 'application/json' },
                 method: 'PUT',
