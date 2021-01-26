@@ -62,8 +62,21 @@ let a;
                          button.addEventListener ("click", function() {
                             var row = $(this).closest('tr');
                             row1 = row.find('td:eq(0)').text();
-                            
-                            id_voluntario = row1;
+                            row2 = row.find('td:eq(1)').text();
+                            row3 = row.find('td:eq(2)').text();
+                            row4 = row.find('td:eq(3)').text();
+                            row5 = row.find('td:eq(4)').text();
+                            row6 = row.find('td:eq(5)').text();
+                            row8 = row.find('td:eq(7)').text();
+                             //alert("O id é: " + row1 );
+
+                             id_operacional = row1;
+                             username = row2;
+
+                             document.getElementById("nomeInput").value = row2;
+                             document.getElementById("emailInput").value = row4;
+                             document.getElementById("experienciaInput").value = row8;
+                             document.getElementById("problemasInput").value = row6;
                         })
                         } else{
 

@@ -23,9 +23,6 @@ function checarVoluntario(valor){
     } else if((nivel == 1 && valor ==2) || (nivel == 2 && (valor == 4)) || (nivel == 3 && (valor == 6)) || (nivel== 4 && (valor == 8)) || (nivel== 5 && (valor == 10)) ) {
         document.getElementById("submit").style.backgroundColor = "red";
         document.getElementById("submit").disabled = false;
-        for(i=1; i<quant_voluntarios; i++){
-            document.getElementById("tabelaVoluntarios").rows[i].cells[8].firstChild.disabled=true;
-        }
     }; 
 
 };
